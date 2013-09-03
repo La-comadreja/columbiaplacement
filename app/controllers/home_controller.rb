@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     render :file => 'app/views/home/index.html.erb'
   end
 
-  def uploadFile
+  def upload
     post = DataFile.save(params[:upload])
     render :text => "Your resume has been uploaded successfully. We'll be in touch. Good luck!"
   end
