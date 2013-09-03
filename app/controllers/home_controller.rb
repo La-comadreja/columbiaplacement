@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    render :file => 'app/views/resume/uploadfile.rhtml'
+    render :file => 'app/views/home/index.html.erb'
   end
 
   def uploadFile
