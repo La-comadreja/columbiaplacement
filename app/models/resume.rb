@@ -1,6 +1,6 @@
 class Resume < ActiveRecord::Base
   def self.save(upload)
-    name =  upload['datafile'].original_filename
+    name = upload['datafile'].original_filename
     directory = "public/resumes"
     # create the file path
     path = File.join(directory, name)
